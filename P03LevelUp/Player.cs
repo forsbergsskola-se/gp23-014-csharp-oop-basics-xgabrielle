@@ -6,16 +6,15 @@
         while (true)
         {
             experience += int.Parse(Console.ReadLine());
-            if (experience > 100)
+            
+            if (experience > 99)
             {
                 level++;
-                experience = experience - 100;
+                experience = experience-100;
                 Console.WriteLine($"{level} Level and {experience} Experience");
             }
             else
-            {
                 Console.WriteLine($"{level} Level and {experience} Experience");
-            }
         }
     }
 }
