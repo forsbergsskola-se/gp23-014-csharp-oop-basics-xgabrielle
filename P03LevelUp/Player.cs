@@ -5,7 +5,7 @@
         Console.WriteLine($"{level} Level and {experience} Experience");
         while (true)
         {
-            experience = int.Parse(Console.ReadLine());
+            experience += int.Parse(Console.ReadLine());
             if (experience > 100)
             {
                 level++;
@@ -16,7 +16,6 @@
             {
                 Console.WriteLine($"{level} Level and {experience} Experience");
             }
-            
         }
     }
 }
