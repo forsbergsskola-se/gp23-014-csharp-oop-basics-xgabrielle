@@ -15,7 +15,6 @@ public class Plant
 
     public void Grow()
     {
-        
         if (isGrown)
             Console.WriteLine("Plant has already grown");
         else
