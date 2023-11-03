@@ -1,20 +1,17 @@
 ﻿public class Player
 {
-    public void GrantExperience(int level, int experience)
+    public int level;
+    public int experience;
+    
+    public void GrantExperience()
     {
-        Console.WriteLine($"{level} Level and {experience} Experience");
-        while (true)
+        experience += int.Parse(Console.ReadLine());
+        
+        if (experience > 99)
         {
-            experience += int.Parse(Console.ReadLine());
-            
-            if (experience > 99)
-            {
-                level++;
-                experience = experience-100;
-                Console.WriteLine($"{level} Level and {experience} Experience");
-            }
-            else
-                Console.WriteLine($"{level} Level and {experience} Experience");
+            level += experience / 100;
+            experience %= 100;
         }
     }
 }
+
